@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - print num from 0 to 9 
- *
- * Return: Always 0.
- */
+ * * main - print num from 0 to 9 
+ * *
+ * * Return: Always 0.
+ * */
 
 int main(void)
 {
