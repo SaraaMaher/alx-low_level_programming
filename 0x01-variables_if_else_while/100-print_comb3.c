@@ -14,6 +14,7 @@ for (j = i + 1 ; j < 10 ; j++)
 putchar((i % 10) + '0');
 putchar((j % 10) + '0');
 putchar(',');
+putchar(' ');
 }
 }
 putchar('\n');
