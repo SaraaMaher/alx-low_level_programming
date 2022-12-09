@@ -5,12 +5,13 @@
 
 /* betty style doc for function main goes there */
 /*
- * main - excute
+ *  main - Prints a random number and states whether
+ *     it is positive, negative, or zero.
  *
  * Return: always_0
  *
  */ 
-int main(void)
+int main (void)
 {
    int n;
    srand(time(0));
