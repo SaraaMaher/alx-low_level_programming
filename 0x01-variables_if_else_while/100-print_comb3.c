@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+/**
+ * main - print all comb of 2
+ *
+ * Return: ALways 0.
+ */
 int main(void)
 {
 int i, j;
