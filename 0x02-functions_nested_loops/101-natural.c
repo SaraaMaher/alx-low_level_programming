@@ -6,12 +6,14 @@
  */
 int main(void)
 {
-int i;
+int i, x;
+x = 0;
 for (i = 0 ; i < 1024 ; i++)
 {
 if (i % 3 == 0 || i % 5 == 0)
-printf("%d", i);
+x = x + i;
 }
+printf("%d", x);
 putchar('\n');
 return (0);
 }
