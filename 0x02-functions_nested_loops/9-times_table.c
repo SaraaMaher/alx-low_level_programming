@@ -14,7 +14,7 @@ for (j = 0 ; j < 10 ; j++)
 x = i * j;
 if ((x / 10) > 0)
 {
-putchar((x / 10) + '0')
+putchar((x / 10) + '0');
 }
 else
 putchar(' ');
