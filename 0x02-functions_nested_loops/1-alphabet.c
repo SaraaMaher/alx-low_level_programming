@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - prints alphabet in lower case
+ * print_alphabet - prints alphabet in lower case
  *
- * Return: always 0.
+ * Return: void
  */
 
-int main(void)
+void print_alphabet(void)
 {
 int i;
 char a;
@@ -17,5 +17,4 @@ putchar(a);
 a++;
 }
 putchar('\n');
-return (0);
 }
