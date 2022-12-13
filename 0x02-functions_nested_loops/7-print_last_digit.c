@@ -13,6 +13,6 @@ int x;
 x = (n % 10);
 if (x < 0)
 x = (x * -1);
-putchar(x + '0');
+putchar('0' + x);
 return (x);
 }
