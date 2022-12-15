@@ -20,7 +20,7 @@ while (j != 0)
 putchar(' ');
 j--;
 }
-putchar('\');
+putchar('\\');
 putchar('\n');
 }
 }
