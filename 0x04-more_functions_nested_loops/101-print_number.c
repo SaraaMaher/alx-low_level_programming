@@ -6,10 +6,15 @@
  */
 void print_number(int n)
 {
-while (n != 0)
+if (n < 0)
 {
-putchar((n % 10) + '0');
-n = n / 10;
+putchar('-');
+n = n * -1;
 }
-putchar('\n');
+int num = n;
+if (num / 10)
+{
+print_number(num / 10);
+}
+putchar(num + '0');
 }
