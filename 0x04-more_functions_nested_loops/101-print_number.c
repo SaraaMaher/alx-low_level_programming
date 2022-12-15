@@ -6,14 +6,12 @@
  */
 void print_number(int n)
 {
-unsigned int num = 0;
+unsigned int num = n;
 if (n < 0)
 {
 putchar('-');
-num = n * -1;
+num = -n;
 }
-else
-num = n;
 
 if (num / 10)
 {
