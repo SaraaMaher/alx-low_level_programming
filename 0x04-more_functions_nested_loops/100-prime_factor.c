@@ -5,21 +5,12 @@
  */
 int main(void)
 {
-int div = 2;
 long max, n = 612852475143;
-while (n != 0)
+for (max = 2 ; max < n ; max++)
 {
-if (n % div != 0)
-div++;
-else
-{
-max = n;
-n = n / div;
-if (n == 1)
-{
+if (n % max == 0)
+n = n / max;
+}
 printf("%ld\n", max);
-break;
-}
-}
 return (0);
 }
