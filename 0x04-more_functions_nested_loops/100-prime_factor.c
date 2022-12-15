@@ -5,8 +5,8 @@
  */
 int main(void)
 {
-int max, div = 2;
-long long int n = 612852475143;
+int div = 2;
+long max, n = 612852475143;
 while (n != 0)
 {
 if (n % div != 0)
@@ -17,7 +17,7 @@ max = n;
 n = n / div;
 if (n == 1)
 {
-printf("%d\n", max);
+printf("%ld\n", max);
 break;
 }
 }
