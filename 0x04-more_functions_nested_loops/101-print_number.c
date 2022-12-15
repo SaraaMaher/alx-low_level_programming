@@ -16,5 +16,5 @@ if (num / 10)
 {
 print_number(num / 10);
 }
-putchar(num + '0');
+putchar((num % 10) + '0');
 }
