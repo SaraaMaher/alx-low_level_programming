@@ -14,7 +14,7 @@ for (l = 0 ; s[l] != '\0' ; l++)
 l--;
 while (l > i)
 {
-swap_char(s + length, s + i);
+swap_char(s + l, s + i);
 i++;
 l--;
 }
