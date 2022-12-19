@@ -6,18 +6,20 @@
  */
 void rev_string(char *s)
 {
-int l, i;
+int l, i = 0;
 char v;
 for (l = 0 ; s[l] != '\0' ; l++)
 {
 }
 l--;
-for (i = 0 ; i != l ; i++)
+while (l > i)
 {
-swap_char(s[l], s[i]);
+swap_char(s + length, s + i);
+i++;
 l--;
 }
 }
+
 /**
  * swap_char - swap two chars
  * @a: first
