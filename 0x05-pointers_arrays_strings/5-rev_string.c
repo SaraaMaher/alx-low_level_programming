@@ -6,19 +6,19 @@
  */
 void rev_string(char *s)
 {
-int i, l;
-char *ordered, *reverse, ch;
-ordered = s;
+int  l;
+char *o, *r, ch;
+o = s;
 for (l = 0 ; s[l] != '\0' ; l++)
 {
 }
-reverse = s + l - 1;
-while (reversed > ordered)
+r = s + l - 1;
+while (r > o)
 {
-ch = *ordered;
-*ordered = *reversed;
-*reversed = ch;
-ordered++;
-reversed--;
+ch = *o;
+*o = *r;
+*r = ch;
+o++;
+r--;
 }
 }
