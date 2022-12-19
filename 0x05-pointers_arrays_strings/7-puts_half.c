@@ -22,4 +22,5 @@ if (i > n)
 putchar(str[i]);
 i++;
 }
+putchar('\n');
 }
