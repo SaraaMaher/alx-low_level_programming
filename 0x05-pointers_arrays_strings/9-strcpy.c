@@ -13,6 +13,6 @@ while (*src != '\0')
 src++;
 dest++;
 }
-*dest = *src;
+*dest = '\0';
 return (dest);
 }
