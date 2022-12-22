@@ -12,10 +12,9 @@ for (; dest[i] != '\0' ; i++)
 {
 }
 int l = 0;
-while (*src != '\0' && l < n)
+while (src[l] != '\0' && l < n)
 {
-dest[i + l] = *src;
-src++;
+dest[i + l] = src[l];
 l++;
 }
 dest[i + l] = '\0';
