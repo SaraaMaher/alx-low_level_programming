@@ -6,16 +6,11 @@
  */
 char *string_toupper(char *s)
 {
-char *r;
 while (*s != '\0')
 {
-if (*s >= 'A' && *s <= 'Z')
-*r = *s;
-else
-*r = *s - 32;
-r++;
+if (*s >= 'a' && *s <= 'z')
+*s = *s - 32;
 s++;
 }
-*r = '\0';
-return (r);
+return (s);
 }
