@@ -6,19 +6,19 @@
  */
 char *leet(char *s)
 {
-int i;
+int i, j = 0;
 char letters[] = "aAeEoOtTlL";
 char num[] = "4433007711";
-while (*s != '\0')
+while (s[j] != '\0')
 {
 i = 0;
-while (i < 10)
+while (letters[i] != '\0')
 {
-if (*s == letters[i])
-*s = num[i];
+if (s[j] == letters[i])
+s[j] = num[i];
 i++;
 }
-s++;
+j++;
 }
 return (s);
 }
