@@ -6,9 +6,9 @@
  */
 char *string_toupper(char *s)
 {
-while (*s != '\0')
-{
 int l = 0;
+while (s[l] != '\0')
+{
 if (s[l] >= 'a' && s[l] <= 'z')
 s[l] = s[l] - 32;
 l++;
