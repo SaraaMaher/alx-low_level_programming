@@ -14,9 +14,8 @@ for (; dest[i] != '\0' ; i++)
 int l = 0;
 while (src[l] != '\0' && l < n)
 {
-dest[i] = src[l];
+dest[i++] = src[l];
 l++;
-i++;
 }
 dest[i + l] = '\0';
 return (dest);
