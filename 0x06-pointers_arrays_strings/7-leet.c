@@ -15,7 +15,7 @@ i = 0;
 while (i < 10)
 {
 if (*s == letters[i])
-*s = num[i]
+*s = num[i];
 i++;
 }
 s++;
