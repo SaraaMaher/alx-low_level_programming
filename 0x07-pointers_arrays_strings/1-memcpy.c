@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _memcpy - copies memory area
  * @dest: pointer destination
@@ -8,7 +9,7 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 int i = 0;
-while (*src != '\0' && i != n)
+while (i < n)
 {
 *dest = *src;
 dest++;
