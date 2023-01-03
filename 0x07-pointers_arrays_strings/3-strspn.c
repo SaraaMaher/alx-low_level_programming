@@ -13,7 +13,10 @@ int i = 0;
 for (; accept[i] != '\0' ; i++)
 {
 if (*s == accept[i])
+{
 r++;
+break;
+}
 }
 s++;
 }
