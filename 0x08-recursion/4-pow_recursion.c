@@ -11,6 +11,6 @@ if (y < 0)
 return (-1);
 if (y == 0)
 return (1);
-elsei
+else
 return (x * _pow_recursion(x, y - 1));
 }
