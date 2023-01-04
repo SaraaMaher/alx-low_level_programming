@@ -7,9 +7,9 @@ void _puts_recursion(char *s)
 {
 while (*s)
 {
-putchar(*s);
+_putchar(*s);
 s++;
 _puts_recursion(s);
 }
-putchar('\n');
+_putchar('\n');
 }
