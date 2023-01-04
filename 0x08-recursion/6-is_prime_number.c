@@ -9,7 +9,7 @@ int is_prime_number(int n)
 if (n <= 1)
 return (0);
 else
-return (prime(n, 2));
+return (prime(n, n / 2));
 }
 /**
  * prime - recurse
@@ -21,8 +21,8 @@ int prime(int n, int i)
 {
 if (n % i == 0)
 return (0);
-if (n == i)
+if (i <= 1)
 return (1);
 else
-return (prime(n, i + 1));
+return (prime(n, i - 1));
 }
