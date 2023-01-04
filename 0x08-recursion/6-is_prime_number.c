@@ -24,5 +24,5 @@ return (0);
 if (n == i)
 return (1);
 else
-return (n, i + 1);
+return (prime(n, i + 1));
 }
