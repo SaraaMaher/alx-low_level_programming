@@ -8,19 +8,22 @@
  */
 int main(int argc, char *argv[])
 {
-int i, r = 0;
+int i, j, r = 0;
 if (argc <= 1)
 printf("0\n");
 else
 {
 for (i = 1; i < argc - 1; i++)
 {
-if (isnumber(argv[i]))
-r += atoi(argv[i])
-else
+for (j = 0; argv[i][j] ; j++)
+{
+if (!isnumber(argv[i][j]))
 {
 printf("Error\n");
 return (1);
+}
+}
+r += atoi(argv[i]);
 }
 }
 }
