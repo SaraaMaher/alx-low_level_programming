@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - mul
  * @argc: size
@@ -11,8 +12,8 @@ if (argc != 3)
 printf("Error\n");
 else
 {
-int a = argv[1] + 0;
-int b = argv[2] + 0;
+int a = atoi(argv[1]);
+int b = atoi(argv[2]);
 int r = a * b;
 printf("%d\n", r);
 }
