@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - adds positive num
  * @argc: size
@@ -18,7 +19,7 @@ for (i = 1; i < argc ; i++)
 {
 for (j = 0; argv[i][j] ; j++)
 {
-if (isnumber(argv[i][j]) == 0)
+if (isdigit(argv[i][j]) == 0)
 {
 printf("Error\n");
 return (1);
