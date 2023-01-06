@@ -8,19 +8,19 @@
  */
 int main(int argc, char *argv[])
 {
+int coins, i, r;
 if (argc != 2)
 {
 printf("Error\n");
 return (1);
 }
-int coins = atoi(argv[1]);
-int r = 0;
+coins = atoi(argv[1]);
+r = 0;
 if (coins < 0)
 {
 printf("0\n");
 return (0);
 }
-int i;
 while (coins)
 {
 if (coins >= 25)
