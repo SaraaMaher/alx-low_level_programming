@@ -29,7 +29,7 @@ else if (coins >= 10)
 i = 10;
 else if (coins >= 5)
 i = 5;
-else if (coins >=2)
+else if (coins >= 2)
 i = 2;
 else
 i = 1;
