@@ -16,15 +16,17 @@ if (s2 == NULL)
 s2 = "";
 l1 = strlen(s1);
 l2 = strlen(s2);
-s = malloc(sizeof(char) * (l1+l2) + 1);
+s = malloc(sizeof(char) * (l1 + l2) +1);
 if (s == NULL)
 return (NULL);
 
 for (i = 0 ; i < l1 ; i++)
 s[i] = s1[i];
 
-for (i = l1 ; i < l2 ; i++)
-s[i] = s2[i];
-
+for (i = 0 ; i < l2 ; i++)
+{
+s[l1] = s2[i];
+l1++;
+}
 return (s);
 }
