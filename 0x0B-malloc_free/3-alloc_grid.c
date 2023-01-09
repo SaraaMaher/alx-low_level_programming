@@ -14,7 +14,7 @@ if (width <= 0 || height <= 0)
 return (NULL);
 grid = malloc(sizeof(int *) * height);
 for (row = 0 ; row < height ; row++)
-grid[i] = malloc(size(int) * width);
+grid[row] = malloc(size(int) * width);
 
 if (grid == NULL)
 return (NULL);
