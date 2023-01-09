@@ -19,12 +19,15 @@ free(grid);
 return (NULL);
 }
 for (row = 0 ; row < height ; row++)
-grid[row] = malloc(sizeof(int) * width);
-
-if (grid == NULL)
 {
+grid[row] = malloc(sizeof(int) * width);
+if (grid[row] == NULL)
+{
+for (i--; i >= 0; i--)
+free(grid[i]);
 free(grid);
 return (NULL);
+}
 }
 for (row = 0 ; row < height ; row++)
 for (col = 0 ; col < width ; col++)
