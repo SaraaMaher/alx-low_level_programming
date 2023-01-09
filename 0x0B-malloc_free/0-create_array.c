@@ -13,6 +13,9 @@ if (size == 0)
 return (NULL);
 
 s = malloc(sizeof(c) * size);
+if (s == NULL)
+return (NULL);
+
 for (i = 0 ; i < size ; i++)
 s[i] = c;
 return (s);
