@@ -23,7 +23,7 @@ for (row = 0 ; row < height ; row++)
 grid[row] = malloc(sizeof(int) * width);
 if (grid[row] == NULL)
 {
-for (row--; row >= 0; i--)
+for (row--; row >= 0; row--)
 free(grid[row]);
 free(grid);
 return (NULL);
