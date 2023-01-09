@@ -17,10 +17,10 @@ s = malloc(sizeof(char) * (l1+l2) + 1);
 if (s == NULL)
 return (NULL);
 
-for (i = 0 ; s1[i] ; i++)
+for (i = 0 ; i < l1 ; i++)
 s[i] = s1[i];
 
-for (i = l1 ; s2[i] ; i++)
+for (i = l1 ; i < l2 ; i++)
 s[i] = s2[i];
 
 return (s);
